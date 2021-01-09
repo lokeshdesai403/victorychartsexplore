@@ -11,7 +11,9 @@ const ChartImageCardView = props => {
             <View>
                 <View
                     style={styles.containerCardStyle}>
-                    <Image style={styles.chartImageStyle}/>
+                    <Image
+                        source={chartItemObject.imageUrl}
+                        style={styles.chartImageStyle}/>
                     <View style={styles.chartsInformationStyle}>
                         <Text style={styles.chartTitleStyle}>{chartItemObject.title}</Text>
                         <Text>{chartItemObject.description}</Text>
@@ -44,6 +46,8 @@ const styles = StyleSheet.create({
         width: 150,
         height: 150,
         backgroundColor: '#000',
+        borderTopLeftRadius: 10,
+        borderBottomLeftRadius: 10,
     },
     chartsInformationStyle: {
         padding: 16,

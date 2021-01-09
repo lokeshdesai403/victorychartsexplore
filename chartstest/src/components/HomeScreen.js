@@ -6,9 +6,21 @@ import {CHARTS_DETAIL_SCREEN} from '../constants/Constants';
 const HomeScreen = props => {
     const listOfCharts = [];
 
-    listOfCharts.push({imageUrl: '', title: 'Area', description: 'Area Charts are easy to use'});
-    listOfCharts.push({imageUrl: '', title: 'Pie', description: 'Pie Charts are easy to use'});
-    listOfCharts.push({imageUrl: '', title: 'Donut', description: 'Donut Charts are easy to use'});
+    listOfCharts.push({
+        imageUrl: require('../../res/drawable/ic_area.png'),
+        title: 'Area',
+        description: 'Area Charts are easy to use',
+    });
+    listOfCharts.push({
+        imageUrl: require('../../res/drawable/ic_pie.png'),
+        title: 'Pie',
+        description: 'Pie Charts are easy to use',
+    });
+    listOfCharts.push({
+        imageUrl: require('../../res/drawable/ic_donald.png'),
+        title: 'Donut',
+        description: 'Donut Charts are easy to use',
+    });
 
     return (
         <>
